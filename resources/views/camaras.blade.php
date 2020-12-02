@@ -76,6 +76,7 @@
       <tr>
         <td>Nombre vulgar</td>
         <td><input type="text" /></td>
+        <td><i class="fas fa-plus-square" style="color: green"></i></td>
       </tr>
       <tr>
         <td>Nombre cientifico</td>

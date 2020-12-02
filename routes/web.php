@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,17 +18,17 @@ use Illuminate\Support\Facades\Route;
     return view('home');
 });*/
 
-Route::middleware(['auth', 'verified'])->group(function () {
+/*Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('camaras', 'camaras')->name('camaras');
-});
+});*/
 
 Route::get('/', function () {
     return view('home');
 });
 
-Route::get('camaras', function () {
+/*Route::get('camaras', function () {
     return view('camaras');
-});
+});*/
 
 Route::get('home', function () {
     return view("home");
