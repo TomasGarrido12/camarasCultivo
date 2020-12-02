@@ -4,4 +4,4 @@ PROYECTO EN PROGRESO: Se trata de una aplicacion web en donde hay Laravel CRUD, 
 
 Se utilizo PHP, Laravel, Jquery,MySQl HTML, Bootstrap y css.
 
-Seleccionar el bran "master" para ver el código.
+Seleccionar el branch "master" para ver el código.
