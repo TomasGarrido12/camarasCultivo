@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class cultivo extends Model
+class Cultivo extends Model
 {
     use HasFactory;
 
-    public function ordenDeTrabajo(){
+   public function ordenDeTrabajo(){
         return $this->hasOne("App\Models\ordenDeTrabajo", "cultivo_id");
     }
 

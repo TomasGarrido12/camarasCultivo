@@ -38,4 +38,9 @@ Route::get('camaras', function () {
     return view("camaras");
 })->middleware('auth');
 
-Route::resource('camaras', ProductController::class);
+Route::get('listar', function () {
+    return view("listar");
+});
+
+route::get("/form","CultivoController@cultivoform");
+route::post("/save","CultivoController@save")->name("save");
