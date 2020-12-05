@@ -7,6 +7,16 @@ use Illuminate\Http\Request;
 
 class CultivoController extends Controller
 {
+    
+    //Listado de usuarios
+    public function list(){
+        $data["cultivos"] = Cultivo::paginate(10);
+
+        return view("listarCultivos", $data);
+    }
+    
+    
+    
     //Formulario de cultivo
     public function cultivoform(){
         return view("cultivoform");

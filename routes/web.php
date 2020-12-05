@@ -38,9 +38,11 @@ Route::get('camaras', function () {
     return view("camaras");
 })->middleware('auth');
 
-Route::get('listar', function () {
-    return view("listar");
-});
+//Listado de cultivos
+Route::get("listarCultivos","CultivoController@list" );
 
+//Formulario de cultivo
 route::get("/form","CultivoController@cultivoform");
+
+//Guardar cultivo
 route::post("/save","CultivoController@save")->name("save");
