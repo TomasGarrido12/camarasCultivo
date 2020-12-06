@@ -36,4 +36,15 @@ class CultivoController extends Controller
 
         return back()->with("cultivoGuardado","Cultivo guardado");
     }
+
+    //Eliminar cultivos
+    public function delete ($id){
+        Cultivo::destroy($id);
+
+        return back()->with("cultivoEliminado", "Cultivo eliminado");
+
+    } 
+
+
+
 }

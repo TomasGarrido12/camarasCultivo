@@ -46,3 +46,6 @@ route::get("/form","CultivoController@cultivoform");
 
 //Guardar cultivo
 route::post("/save","CultivoController@save")->name("save");
+
+//Borrar cultivos
+Route::delete('/delete/{id}', "CultivoController@delete")->name("delete");
