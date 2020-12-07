@@ -49,3 +49,9 @@ route::post("/save","CultivoController@save")->name("save");
 
 //Borrar cultivos
 Route::delete('/delete/{id}', "CultivoController@delete")->name("delete");
+
+//Formulario para editar cultivo
+Route::get("editform/{id}","CultivoController@editform")->name("editform");
+
+//Edicion cultivos
+Route::patch("/edit/{id}","CultivoController@edit")->name("edit");

@@ -30,19 +30,17 @@
                         <td>{{$cultivo->nombreCientifico}}</td>
                         <td>{{$cultivo->reemplazoDe}}</td>
                         <td>
+                            
                             <form action="{{route("delete", $cultivo->id)}}" method="POST">
                                 @csrf @method("DELETE")
-                                
+                                <a href="{{route('editform',$cultivo->id)}}" class="btn btn-primary">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </a> 
                                 <button type="submit" onclick='return confirm("¿Borrar?");' class="btn btn-danger">
                                 <i class="fas fa-trash-alt"></i>
                                 </button>
-
                             </form>
-
-
                         </td>
-
-
                     </tr>
                     @endforeach
                 </tbody>

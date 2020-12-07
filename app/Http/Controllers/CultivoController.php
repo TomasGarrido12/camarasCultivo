@@ -45,6 +45,22 @@ class CultivoController extends Controller
 
     } 
 
+    //Formulario para editar cultivo
+    public function editform($id){
+        $cultivo = Cultivo::findOrFail($id);
+
+        return view("editform", compact("cultivo"));
+    }
+
+    //Edicion de usuarios
+    public function edit(Request $request, $id){
+        $datosCultivo = request()->except((["_token", "_method"]));
+        Cultivo::where("id","=",$id)->update($datosCultivo);
+
+        return back()->with("cultivoModificado", "Cultivo modificado");
+
+    }
+
 
 
 }
