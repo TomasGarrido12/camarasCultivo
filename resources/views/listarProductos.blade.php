@@ -4,12 +4,12 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <h2 class="text-center mb-5">Productos</h2>
-            
-            {{--@if(session("productoEliminado"))
+            <!--Mensaje Flash de producto eliminado-->
+            @if(session("productoEliminado"))
            <div class="alert alert-success">
                {{session("productoEliminado")}}
            </div>
-           @endif--}}
+           @endif
                 
             <a class="btn btn-success mb-4" href="{{url("/productoform") }}">Agregar producto</a>
 
@@ -20,6 +20,7 @@
                         <th>Plantas objetivo</th>
                         <th>Modo de accion</th>
                         <th>Dias</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -29,18 +30,17 @@
                         <td>{{$producto->plantasObjetivo}}</td>
                         <td>{{$producto->modoDeAccion}}</td>
                         <td>{{$producto->duracion}}</td>
-                        
-                        {{-- <td>
-                            <form action="{{route("delete", $cultivo->id)}}" method="POST">
+                        <td>
+                            <form action="{{route("deleteProducto", $producto->id)}}" method="POST">
                                 @csrf @method("DELETE")
-                                <a href="{{route('editform',$cultivo->id)}}" class="btn btn-primary">
+                                {{-- <a href="{{route('editform',$cultivo->id)}}" class="btn btn-primary">
                                     <i class="fas fa-pencil-alt"></i>
-                                </a> 
+                                </a>  --}}
                                 <button type="submit" onclick='return confirm("¿Borrar?");' class="btn btn-danger">
                                 <i class="fas fa-trash-alt"></i>
                                 </button>
                             </form>
-                        </td> --}}
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>

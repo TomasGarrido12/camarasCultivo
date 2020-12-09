@@ -36,7 +36,13 @@ class ProductController extends Controller
 
 
         return back()->with("productoGuardado","Producto guardado");
+    }
 
+    //Eliminar productos
+    public function deleteProducto($id){
+        Producto::destroy($id);
+
+        return back()->with("productoEliminado","Producto eliminado");
     }
 
 }

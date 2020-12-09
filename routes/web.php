@@ -65,3 +65,6 @@ Route::get("/productoform", "ProductController@productoform");
 //Guardar producto
 Route::post("/saveProducto" , "ProductController@saveProducto")->name("saveProducto");
 
+//Eliminar producto
+Route::delete("/deleteProducto/{id}","ProductController@deleteProducto")->name("deleteProducto");
+
