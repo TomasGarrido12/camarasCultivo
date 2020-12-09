@@ -131,10 +131,39 @@ return [
     */
 
     'custom' => [
-        'nombre' => [
-            'required' => 'El nombre es requerido',
-            'string' => 'El nombre tiene que ser un texto',
-            'max:255' => 'El nombre es demasiado largo'
+        'nombreVulgar' => [
+            'required' => 'El nombre vulgar es requerido',
+            'string' => 'El nombre vulgar tiene que ser un texto',
+            'max:255' => 'El nombre vulgar  es demasiado largo'
+        ],
+        'nombreCientifico' => [
+            'required' => 'El nombre cientifico es requerido',
+            'string' => 'El nombre cientifico tiene que ser un texto',
+            'max:255' => 'El nombre cientifico es demasiado largo'
+        ],
+        'reemplazoDe' => [
+            'required' => 'El nombre del sustituto es requerido',
+            'string' => 'El nombre del sustituto tiene que ser un texto',
+            'max:255' => 'El nombre del sustituto es demasiado largo'
+        ],
+        'descripcion' => [
+            'required' => 'La descripcion es requerida',
+            'string' => 'La descripcion tiene que ser un texto',
+            'max:255' => 'La descripcion es demasiada larga'
+        ],
+        'plantasObjetivo' => [
+            'required' => 'La planta objetivo es requerida',
+            'string' => 'La planta objetivo tiene que ser un texto',
+            'max:255' => 'El nombre de la planta objetivo es demasiada larga'
+        ],
+        'modoDeAccion' => [
+            'required' => 'El modo de accion es requerido',
+            'string' => 'El modo de accion tiene que ser un texto',
+            'max:255' => 'El modo de accion es demasiado largo'
+        ],
+        'duracion' => [
+            'required' => 'La cantidad de dias es requerida',
+            'integer' => 'La cantidad de dias tiene que ser en numero'
         ],
     ],
 

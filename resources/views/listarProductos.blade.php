@@ -3,16 +3,15 @@
 <div class="container pt-5">
     <div class="row justify-content-center">
         <div class="col-md-10">
-            <h2 class="text-center mb-5">Cultivos</h2>
-            <!--Mensaje flash de borrado con exito-->
-            @if(session("cultivoEliminado"))
-            <div class="alert alert-success">
-                {{session("cultivoEliminado")}}
-            </div>
-            @endif
-
-
-            <a class="btn btn-success mb-4" href="{{url("/form") }}">Agregar cultivo</a>
+            <h2 class="text-center mb-5">Productos</h2>
+            
+            {{--@if(session("productoEliminado"))
+           <div class="alert alert-success">
+               {{session("productoEliminado")}}
+           </div>
+           @endif--}}
+                
+            <a class="btn btn-success mb-4" href="{{url("/") }}">Agregar producto</a>
 
             <table class="table table-bordered table-striped text-center" style="background-color: white">
                 <thead>
