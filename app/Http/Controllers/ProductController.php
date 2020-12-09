@@ -45,4 +45,19 @@ class ProductController extends Controller
         return back()->with("productoEliminado","Producto eliminado");
     }
 
+    //Formulario para editar productos
+    public function editproductoform($id){
+        $producto = Producto::findOrFail($id);
+
+        return view("editproductoform" , compact("producto"));
+    }
+
+    //Edicion de productos
+    public function editProducto(Request $request, $id){
+        $datosProducto = request()->except((["_token", "_method"]));
+        Producto::where("id", "=" , $id)->update($datosProducto);
+
+        return back()->with("productoModificado", "Producto modificado");
+    }
+
 }

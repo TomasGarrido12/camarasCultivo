@@ -68,3 +68,8 @@ Route::post("/saveProducto" , "ProductController@saveProducto")->name("saveProdu
 //Eliminar producto
 Route::delete("/deleteProducto/{id}","ProductController@deleteProducto")->name("deleteProducto");
 
+//Formulario para editar producto
+Route::get("/editproductoform/{id}" , "ProductController@editproductoform")->name("editproductoform");
+
+//Edicion de producto
+Route::patch("/editProducto/{id}", "ProductController@editproducto")->name("editProducto");

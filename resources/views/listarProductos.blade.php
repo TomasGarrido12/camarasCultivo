@@ -33,9 +33,9 @@
                         <td>
                             <form action="{{route("deleteProducto", $producto->id)}}" method="POST">
                                 @csrf @method("DELETE")
-                                {{-- <a href="{{route('editform',$cultivo->id)}}" class="btn btn-primary">
+                                <a href="{{route('editproductoform',$producto->id)}}" class="btn btn-primary">
                                     <i class="fas fa-pencil-alt"></i>
-                                </a>  --}}
+                                </a> 
                                 <button type="submit" onclick='return confirm("¿Borrar?");' class="btn btn-danger">
                                 <i class="fas fa-trash-alt"></i>
                                 </button>

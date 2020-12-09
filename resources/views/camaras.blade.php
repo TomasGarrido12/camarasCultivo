@@ -7,9 +7,8 @@
         <li>
           <a class="open" href="#">Camara 1</a>
           <ul class="subMenu">
-            <li><a class="productoCamaraUno" href="#">Producto</a></li>
+            <li><a class="productoCamaraUno" href="{{url("/listarProductos") }}">Producto</a></li>
             <li><a class="cultivoCamaraUno" href="{{url("/listarCultivos") }}">Cultivo</a></li>
-            <li><a class="fechasCamaraUno" href="#">Fechas</a></li>
             <li><a class="oTCamaraUno" href="#">Orden de Trabajo</a></li>
             <li><a class="fotosCamaraUno"  href="#">Fotos</a></li>
           </ul>
