@@ -8,6 +8,14 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     
+    //Listado de producto
+    public function listProductos(){
+        $data["productos"] = Producto::paginate(10);
+
+        return view("listarProductos", $data);
+    }
+    
+    
     //Formulario de producto
     public function productoform(){
         return view("productoform");

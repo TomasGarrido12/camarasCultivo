@@ -57,10 +57,11 @@ Route::get("editform/{id}","CultivoController@editform")->name("editform");
 Route::patch("/edit/{id}","CultivoController@edit")->name("edit");
 
 //Listado de productos
-Route::get("listarProductos");
+Route::get("listarProductos", "ProductController@listProductos");
 
 //Formulario de producto
 Route::get("/productoform", "ProductController@productoform");
 
 //Guardar producto
 Route::post("/saveProducto" , "ProductController@saveProducto")->name("saveProducto");
+

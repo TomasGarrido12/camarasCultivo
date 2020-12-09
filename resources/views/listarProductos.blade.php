@@ -11,25 +11,26 @@
            </div>
            @endif--}}
                 
-            <a class="btn btn-success mb-4" href="{{url("/") }}">Agregar producto</a>
+            <a class="btn btn-success mb-4" href="{{url("/productoform") }}">Agregar producto</a>
 
             <table class="table table-bordered table-striped text-center" style="background-color: white">
                 <thead>
                     <tr>
-                        <th>Nombre Vulgar</th>
-                        <th>Nombre Cientifico</th>
-                        <th>Reemplazo a</th>
-                        <th>Acciones</th>
+                        <th>Descripcion</th>
+                        <th>Plantas objetivo</th>
+                        <th>Modo de accion</th>
+                        <th>Dias</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($cultivos as $cultivo)
+                    @foreach($productos as $producto)
                     <tr>
-                        <td>{{$cultivo->nombreVulgar}}</td>
-                        <td>{{$cultivo->nombreCientifico}}</td>
-                        <td>{{$cultivo->reemplazoDe}}</td>
-                        <td>
-                            
+                        <td>{{$producto->descripcion}}</td>
+                        <td>{{$producto->plantasObjetivo}}</td>
+                        <td>{{$producto->modoDeAccion}}</td>
+                        <td>{{$producto->duracion}}</td>
+                        
+                        {{-- <td>
                             <form action="{{route("delete", $cultivo->id)}}" method="POST">
                                 @csrf @method("DELETE")
                                 <a href="{{route('editform',$cultivo->id)}}" class="btn btn-primary">
@@ -39,13 +40,14 @@
                                 <i class="fas fa-trash-alt"></i>
                                 </button>
                             </form>
-                        </td>
+                        </td> --}}
                     </tr>
                     @endforeach
                 </tbody>
 
 
             </table>
+            {{-- {{$productos->links()}} --}}
             
 
 
