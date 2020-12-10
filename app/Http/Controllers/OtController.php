@@ -38,4 +38,11 @@ class OtController extends Controller
         return back()->with("otGuardado","Orden de Trabajo guardada");
     }
 
+    //Borrar Ot
+    public function deleteOt($id){
+        ordenDeTrabajo::destroy($id);
+
+        return back()->with("otEliminada","Orden de Trabajo eliminada");
+    }
+
 }

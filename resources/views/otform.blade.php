@@ -64,7 +64,7 @@
         </div>
 
     </div>
-    <a class="btn btn-light btn-xs mt-5" href="/listarOt">&laquo volver</a>
+<a class="btn btn-light btn-xs mt-5" href="{{ url ("/listarOt")}}">&laquo volver</a>
 
 </div>
 @endsection

@@ -4,12 +4,12 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <h2 class="text-center mb-5">Ordenes de Trabajo</h2>
-            {{-- <!--Mensaje Flash de producto eliminado-->
-            @if(session("productoEliminado"))
+            <!--Mensaje Flash de producto eliminado-->
+            @if(session("otEliminada"))
            <div class="alert alert-success">
-               {{session("productoEliminado")}}
+               {{session("otEliminada")}}
            </div>
-           @endif --}}
+           @endif
                 
         <a class="btn btn-success mb-4" href="{{url('/otform')}}">Agregar Orden de Trabajo</a>
 
@@ -34,17 +34,17 @@
                         <td>{{$ot->sembrado}}</td>
                         <td>{{$ot->aplicado}}</td>
                         <td>{{$ot->cortado}}</td>
-                       {{--  <td>
-                            <form action="{{route("deleteProducto", $producto->id)}}" method="POST">
+                        <td>
+                            <form action="{{route("deleteOt", $ot->id)}}" method="POST">
                                 @csrf @method("DELETE")
-                                <a href="{{route('editproductoform',$producto->id)}}" class="btn btn-primary">
+                                {{-- <a href="{{route('editproductoform',$producto->id)}}" class="btn btn-primary">
                                     <i class="fas fa-pencil-alt"></i>
-                                </a> 
+                                </a>  --}}
                                 <button type="submit" onclick='return confirm("¿Borrar?");' class="btn btn-danger">
                                 <i class="fas fa-trash-alt"></i>
                                 </button>
                             </form>
-                        </td> --}}
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>

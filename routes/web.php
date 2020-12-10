@@ -81,4 +81,7 @@ Route::get("/listarOt", "OtController@listOt");
 Route::get("/otform","OtController@otform");
 
 //Guardar Ot
-route::post("/saveOt","OtController@saveOt")->name("saveOt");
+Route::post("/saveOt","OtController@saveOt")->name("saveOt");
+
+//Eliminar Ot
+Route::delete("/deleteOt/{id}" , "OtController@deleteOt" )->name("deleteOt");
