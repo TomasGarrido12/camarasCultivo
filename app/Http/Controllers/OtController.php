@@ -45,4 +45,20 @@ class OtController extends Controller
         return back()->with("otEliminada","Orden de Trabajo eliminada");
     }
 
+    //Formulario para editar Ot
+    public function editOtform($id){
+        $ot = ordenDeTrabajo::findOrFail($id);
+
+        return view("editOtform", compact("ot"));
+    }
+
+    //Edicion de Ot
+    public function editOt(Request $request, $id){
+        $datosOt = request()->except((["_token", "_method"]));
+        ordenDeTrabajo::where("id", "=" , $id)->update($datosOt);
+
+        return back()->with("otModificado", "Orden de Trabajo modificada");
+    }
+
+
 }

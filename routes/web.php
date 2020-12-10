@@ -85,3 +85,9 @@ Route::post("/saveOt","OtController@saveOt")->name("saveOt");
 
 //Eliminar Ot
 Route::delete("/deleteOt/{id}" , "OtController@deleteOt" )->name("deleteOt");
+
+//Formulario para editar Ot
+Route::get("/editOtform/{id}", "OtController@editOtform" )->name("editOtform");
+
+//Edicion de Ot
+Route::patch("/editOt/{id}","OtController@editOt" )->name("editOt");

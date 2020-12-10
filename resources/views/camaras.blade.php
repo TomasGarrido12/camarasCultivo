@@ -9,7 +9,7 @@
           <ul class="subMenu">
             <li><a class="productoCamaraUno" href="{{url("/listarProductos") }}">Producto</a></li>
             <li><a class="cultivoCamaraUno" href="{{url("/listarCultivos") }}">Cultivo</a></li>
-            <li><a class="oTCamaraUno" href="#">Orden de Trabajo</a></li>
+          <li><a class="oTCamaraUno" href="{{url("/listarOt")}}">Orden de Trabajo</a></li>
             <li><a class="fotosCamaraUno"  href="#">Fotos</a></li>
           </ul>
         </li>
