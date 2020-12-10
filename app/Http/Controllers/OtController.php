@@ -7,6 +7,14 @@ use Illuminate\Http\Request;
 
 class OtController extends Controller
 {
+    //Listado de Ot
+    public function listOt(){
+        $data["ots"] = ordenDeTrabajo::paginate(3);
+
+        return view("listarOt" , $data);
+
+    }
+    
     //Formulario de Ot
     public function otform(){
         return view("otform");
@@ -29,4 +37,5 @@ class OtController extends Controller
 
         return back()->with("otGuardado","Orden de Trabajo guardada");
     }
+
 }

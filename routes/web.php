@@ -75,7 +75,7 @@ Route::get("/editproductoform/{id}" , "ProductController@editproductoform")->nam
 Route::patch("/editProducto/{id}", "ProductController@editproducto")->name("editProducto");
 
 //Listado de Ot
-Route::get("listarOt");
+Route::get("/listarOt", "OtController@listOt");
 
 //Formulario de Ot
 Route::get("/otform","OtController@otform");

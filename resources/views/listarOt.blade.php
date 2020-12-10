@@ -11,26 +11,30 @@
            </div>
            @endif --}}
                 
-            <a class="btn btn-success mb-4" href="">Agregar Orden de Trabajo</a>
+        <a class="btn btn-success mb-4" href="{{url('/otform')}}">Agregar Orden de Trabajo</a>
 
             <table class="table table-bordered table-striped text-center" style="background-color: white">
                 <thead>
                     <tr>
-                        <th>Descripcion</th>
-                        <th>Plantas objetivo</th>
-                        <th>Modo de accion</th>
-                        <th>Dias</th>
+                        <th>Fecha de creacion</th>
+                        <th>Quien lo hizo</th>
+                        <th>Duracion</th>
+                        <th>Siembra</th>
+                        <th>Aplicado</th>
+                        <th>Cortado</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($productos as $producto)
+                    @foreach($ots as $ot)
                     <tr>
-                        <td>{{$producto->descripcion}}</td>
-                        <td>{{$producto->plantasObjetivo}}</td>
-                        <td>{{$producto->modoDeAccion}}</td>
-                        <td>{{$producto->duracion}}</td>
-                        <td>
+                        <td>{{$ot->fechaDeCreacion}}</td>
+                        <td>{{$ot->quienLoHizo}}</td>
+                        <td>{{$ot->duracionEstimada}}</td>
+                        <td>{{$ot->sembrado}}</td>
+                        <td>{{$ot->aplicado}}</td>
+                        <td>{{$ot->cortado}}</td>
+                       {{--  <td>
                             <form action="{{route("deleteProducto", $producto->id)}}" method="POST">
                                 @csrf @method("DELETE")
                                 <a href="{{route('editproductoform',$producto->id)}}" class="btn btn-primary">
@@ -40,7 +44,7 @@
                                 <i class="fas fa-trash-alt"></i>
                                 </button>
                             </form>
-                        </td>
+                        </td> --}}
                     </tr>
                     @endforeach
                 </tbody>
