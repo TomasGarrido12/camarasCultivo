@@ -16,7 +16,6 @@ class CultivoController extends Controller
     }
     
     
-    
     //Formulario de cultivo
     public function cultivoform(){
         return view("cultivoform");

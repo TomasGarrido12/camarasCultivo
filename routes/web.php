@@ -73,3 +73,12 @@ Route::get("/editproductoform/{id}" , "ProductController@editproductoform")->nam
 
 //Edicion de producto
 Route::patch("/editProducto/{id}", "ProductController@editproducto")->name("editProducto");
+
+//Listado de Ot
+Route::get("listarOt");
+
+//Formulario de Ot
+Route::get("/otform","OtController@otform");
+
+//Guardar Ot
+route::post("/saveOt","OtController@saveOt")->name("saveOt");

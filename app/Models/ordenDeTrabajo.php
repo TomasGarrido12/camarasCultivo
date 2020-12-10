@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ordenDeTrabajo extends Model
 {
+    public $table = "ordendetrabajos";
     use HasFactory;
 
     public function cultivo(){

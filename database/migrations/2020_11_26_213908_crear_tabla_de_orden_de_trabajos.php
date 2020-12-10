@@ -14,7 +14,7 @@ class CrearTablaDeOrdenDeTrabajos extends Migration
     public function up()
     {
         Schema::create('ordenDeTrabajos', function (Blueprint $table) {
-            $table->id();
+            $table->id("id");
             $table->foreignId("cultivo_id");
             $table->date("fechaDeCreacion");
             $table->string("quienLoHizo");

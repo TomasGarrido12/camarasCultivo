@@ -165,6 +165,27 @@ return [
             'required' => 'La cantidad de dias es requerida',
             'integer' => 'La cantidad de dias tiene que ser en numero'
         ],
+        'fechaDeCreacion' => [
+            'required' => 'La fecha de creacion es requerida',
+        ],
+        'quienLoHizo' => [
+            'required' => 'El nombre de quien lo hizo es requerido',
+            'string' => 'El nombre tiene que ser un texto',
+            'max:255' => 'El nombre es demasiado largo'
+        ],
+        'duracionEstimada' => [
+            'required' => 'La fecha de duracion es requerida',
+        ],
+        'sembrado' => [
+            'required' => 'La fecha de sembrado es requerida',
+        ],
+        'aplicado' => [
+            'required' => 'La fecha de aplicado es requerida',
+        ],
+        'cortado' => [
+            'required' => 'La fecha de cortado es requerida',
+        ],
+        
     ],
 
     /*
