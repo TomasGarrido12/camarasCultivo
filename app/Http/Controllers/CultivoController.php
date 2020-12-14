@@ -27,7 +27,8 @@ class CultivoController extends Controller
         $validator = $this->validate($request,[
             "nombreVulgar" => "required|string|max:255",
             "nombreCientifico" => "required|string|max:255",
-            "reemplazoDe" => "required|string|max:255"
+            "reemplazoDe" => "required|string|max:255",
+            "camaraCultivo" => "required|integer"
         ]);
 
         $cultivodata = request()->except("_token");

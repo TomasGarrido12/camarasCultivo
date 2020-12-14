@@ -22,6 +22,7 @@
                         <th>Siembra</th>
                         <th>Aplicado</th>
                         <th>Cortado</th>
+                        <th>Camara</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -34,6 +35,7 @@
                         <td>{{$ot->sembrado}}</td>
                         <td>{{$ot->aplicado}}</td>
                         <td>{{$ot->cortado}}</td>
+                        <td>{{$ot->camaraOt}}</td>
                         <td>
                             <form action="{{route("deleteOt", $ot->id)}}" method="POST">
                                 @csrf @method("DELETE")

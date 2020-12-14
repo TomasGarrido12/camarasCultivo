@@ -16,6 +16,7 @@ class CrearTablaDeCultivos extends Migration
         Schema::create('cultivos', function (Blueprint $table) {
             $table->id();
             $table->string("nombreVulgar", 100);
+            $table->integer("camaraCultivo");
             $table->string("nombreCientifico",100);
             $table->string("reemplazoDe",100);
             $table->timestamps();

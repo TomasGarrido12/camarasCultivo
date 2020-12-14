@@ -41,6 +41,10 @@
                             <label for="" class="col-2">Sustituto</label>
                             <input type="text" name="reemplazoDe" class="form-control col-md-9" value="{{$cultivo->reemplazoDe}}">
                         </div>
+                        <div class="row form-group">
+                            <label for="" class="col-2">Camara</label>
+                            <input type="text" name="camaraCultivo" class="form-control col-md-9" value="{{$cultivo->camaraCultivo}}">
+                        </div>
                         <div class="row form-group justify-content-center">
                             <button type="submit" class="btn btn-success col-md-9 off set-2">Modificar</button>
                         </div>

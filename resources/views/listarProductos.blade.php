@@ -20,6 +20,7 @@
                         <th>Plantas objetivo</th>
                         <th>Modo de accion</th>
                         <th>Dias</th>
+                        <th>Camara</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -30,6 +31,7 @@
                         <td>{{$producto->plantasObjetivo}}</td>
                         <td>{{$producto->modoDeAccion}}</td>
                         <td>{{$producto->duracion}}</td>
+                        <td>{{$producto->camaraProducto}}</td>
                         <td>
                             <form action="{{route("deleteProducto", $producto->id)}}" method="POST">
                                 @csrf @method("DELETE")

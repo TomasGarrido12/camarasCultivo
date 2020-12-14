@@ -185,6 +185,11 @@ return [
         'cortado' => [
             'required' => 'La fecha de cortado es requerida',
         ],
+        'camaraCultivo' => [
+            'required' => 'El numero de camara es requerido',
+            'integer' => 'El numero de camara tiene que ser numerico'
+        ],
+
         
     ],
 

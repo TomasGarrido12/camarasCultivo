@@ -28,7 +28,8 @@ class ProductController extends Controller
             "descripcion" => "required|string|max:255",
             "plantasObjetivo" => "required|string|max:255",
             "modoDeAccion" => "required|string|max:255",
-            "duracion" => "required|integer"
+            "duracion" => "required|integer",
+            "camaraProducto" => "required|integer"
         ]);
 
         $productodata = request()->except("_token");

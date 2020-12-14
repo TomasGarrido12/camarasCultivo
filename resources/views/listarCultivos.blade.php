@@ -20,6 +20,7 @@
                         <th>Nombre Vulgar</th>
                         <th>Nombre Cientifico</th>
                         <th>Reemplazo a</th>
+                        <th>Camara</th>
                         <th>Acciones</th>
                     </tr>
                 </thead>
@@ -29,6 +30,7 @@
                         <td>{{$cultivo->nombreVulgar}}</td>
                         <td>{{$cultivo->nombreCientifico}}</td>
                         <td>{{$cultivo->reemplazoDe}}</td>
+                        <td>{{$cultivo->camaraCultivo}}</td>
                         <td>
                             
                             <form action="{{route("delete", $cultivo->id)}}" method="POST">

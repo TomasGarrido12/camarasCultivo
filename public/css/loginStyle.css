@@ -1,53 +1,61 @@
 * {
-  font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 .banner {
-  position: relative;
-  background: url(https://cdn.pixabay.com/photo/2020/05/08/16/27/field-5146427_960_720.jpg);
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center;
+    position: relative;
+    background: url(https://cdn.pixabay.com/photo/2015/09/18/11/36/plantation-945400_960_720.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.bannerDos {
+    position: relative;
+    background: url(https://cdn.pixabay.com/photo/2015/09/18/11/36/plantation-945400_960_720.jpg);
+    min-height: 20;
+    background-size: cover;
+    background-position: center;
 }
 
 .sidenav {
-  height: 100vh;
-  width: 200px;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #0e9424d0;
-  overflow-x: hidden;
-  padding-top: 20px;
+    height: 100vh;
+    width: 200px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0d701ed0;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
 
 .subMenu {
-  display: none;
-  padding-left: 8px;
+    display: none;
+    padding-left: 8px;
 }
 
 .sidenav a,
 .open {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #080808;
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #080808;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
 }
 
 .sidenav a:hover,
 .open:hover {
-  color: #f1f1f1;
+    color: #f1f1f1;
 }
 
 .tablaCultivoCamaraUno,
 .tablaProductoCamaraUno,
 .tablaFechasCamaraUno {
-  display: inline;
-  display: none;
+    display: inline;
+    display: none;
 }

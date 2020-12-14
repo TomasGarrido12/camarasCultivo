@@ -42,6 +42,10 @@
                             <label for="" class="col-2">Dias</label>
                             <input type="number" name="duracion" class="form-control col-md-9" value="{{$producto->duracion}}">
                         </div>
+                        <div class="row form-group">
+                            <label for="" class="col-2">Camara</label>
+                            <input type="number" name="camaraProducto" class="form-control col-md-9" value="{{$producto->camaraProducto}}">
+                        </div>
                         <div class="row form-group justify-content-center">
                             <button type="submit" class="btn btn-success col-md-9 off set-2">Modificar</button>
                         </div>

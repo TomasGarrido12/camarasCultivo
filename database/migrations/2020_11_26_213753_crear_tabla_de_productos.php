@@ -15,8 +15,8 @@ class CrearTablaDeProductos extends Migration
     {
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
-            $table->foreignId("cultivo_id");
             $table->string("descripcion");
+            $table->integer("camaraProducto");
             $table->string("plantasObjetivo",100);
             $table->string("modoDeAccion");
             $table->integer("duracion");
